@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BookBay — Books & Merch</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--brand:#c7742f;--brand-dark:#a25f27;--text:#242424;--muted:#6b6b6b;--bg:#fff7ef;--card:#ffffff;--chip:#ffe7cf;--star:#ffb400;--shadow:0 6px 18px rgba(0,0,0,.08)}
+*{box-sizing:border-box}html,body{margin:0;padding:0;font-family:Poppins,system-ui,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:#fff}
+a{text-decoration:none;color:inherit}img{max-width:100%;display:block}
+.topbar{background:var(--brand);color:#fff;padding:.45rem .9rem;font-size:.9rem;display:flex;gap:16px;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:50}
+.topbar .left,.topbar .right{display:flex;gap:14px;align-items:center}
+.topbar .pill{background:rgba(255,255,255,.18);padding:.25rem .6rem;border-radius:999px}
+header{background:#fff;box-shadow:0 6px 18px rgba(0,0,0,.08);position:sticky;top:38px;z-index:40}
+.nav{max-width:1200px;margin:0 auto;padding:.8rem 1rem;display:flex;align-items:center;gap:16px}
+.logo{font-weight:700;font-size:1.25rem}
+.subtle-tabs{display:flex;gap:12px;flex-wrap:wrap}
+.subtle-tabs a{font-size:.9rem;color:var(--muted)}
+.subtle-tabs a.active{color:var(--brand-dark);font-weight:600}
+.search{flex:1;display:flex;gap:8px}
+.search input{flex:1;padding:.65rem .9rem;border:1px solid #e7e7e7;border-radius:10px;background:#fafafa;outline:none}
+.btn{padding:.6rem .9rem;border-radius:10px;border:none;cursor:pointer;background:var(--brand);color:#fff}
+.iconbtn{background:#fff;border:1px solid #eee;color:#333}
+section{padding:26px 0}
+.section-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+.section-head h2{margin:0;font-size:1.2rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{background:var(--card);border-radius:14px;box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column}
+.thumb{height:180px;background:#f4f4f4}
+.thumb img{height:100%;width:100%;object-fit:cover}
+.badge{position:absolute;top:10px;left:10px;background:#fff4e3;border:1px solid #ffd9ad;padding:.25rem .45rem;border-radius:999px;font-size:.75rem}
+.relative{position:relative}
+.price{font-weight:700}
+.strike{color:#999;text-decoration:line-through;margin-left:6px;font-weight:500}
+.stars{color:var(--star);font-size:.9rem}
+.line{height:1px;background:#eee;margin:10px 0}
+footer{background:#111;color:#eee}
+.footer-inner{max-width:1200px;margin:0 auto;padding:26px 1rem;display:grid;grid-template-columns:2fr 1fr 1fr;gap:20px}
+footer a{color:#cfcfcf;font-size:.95rem}
+.copyright{background:#0a0a0a;color:#bdbdbd;padding:10px 1rem;text-align:center;font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="left"><span class="pill">Free shipping on 499+</span><span class="pill">Cash on Delivery</span><span class="pill">New arrivals</span></div>
+  <div class="right"><a href="#">Track Order</a><a href="#">Wishlist</a><a href="#">Login</a><button class="btn iconbtn">Cart (0)</button></div>
+</div>
+
+<header>
+  <div class="nav">
+    <div class="logo">bookbay</div>
+    <nav class="subtle-tabs"><a href="#" class="active">Book Bundles</a><a href="#">Hindi Books</a><a href="#">Coffee Table</a><a href="#">Kids</a></nav>
+    <div class="search"><input type="search" placeholder="Search books, authors, ISBN..."><button class="btn">Search</button></div>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <h2>Fiction Addiction</h2>
+      <div class="subtle-tabs">
+        <a class="active" href="#">Romance</a><a href="#">Mystery</a><a href="#">Fantasy</a><a href="#">Adventure</a><a href="#">Historical</a>
+      </div>
+    </div>
+
+    <div class="grid">
+      <article class="card">
+        <div class="relative thumb">
+          <span class="badge">New</span>
+          <img src="https://images.unsplash.com/photo-1528209392022-6cb4c1b455cc?q=80&w=1200&auto=format&fit=crop" alt="Book">
+        </div>
+        <div class="p-12">
+          <b>Chronicles of the Hidden Realm</b>
+          <p style="color:#6b6b6b">by A. Writer</p>
+          <div class="line"></div>
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div><span class="price">₹299</span><span class="strike">₹499</span></div>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="relative thumb">
+          <span class="badge">Hot</span>
+          <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?q=80&w=1200&auto=format&fit=crop" alt="Book">
+        </div>
+        <div class="p-12">
+          <b>Divya Duar – Based on true story</b>
+          <p style="color:#6b6b6b">by N. Moon</p>
+          <div class="line"></div>
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div><span class="price">₹249</span><span class="strike">₹399</span></div>
+            <div class="stars">★★★★☆</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="relative thumb">
+          <span class="badge">-40%</span>
+          <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=1200&auto=format&fit=crop" alt="Book">
+        </div>
+        <div class="p-12">
+          <b>Final Secret</b>
+          <p style="color:#6b6b6b">by S. Coach</p>
+          <div class="line"></div>
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div><span class="price">₹189</span><span class="strike">₹299</span></div>
+            <div class="stars">★★★★☆</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="relative thumb">
+          <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?q=80&w=1200&auto=format&fit=crop" alt="Book">
+        </div>
+        <div class="p-12">
+          <b>Veil of Shadow</b>
+          <p style="color:#6b6b6b">by J. Notes</p>
+          <div class="line"></div>
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div><span class="price">₹215</span><span class="strike">₹350</span></div>
+            <div class="stars">★★★☆☆</div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="logo" style="color:#fff">bookbay</div>
+      <p style="color:#cfcfcf">Handpicked pre-loved books, bundles and cute merch. Ships across India.</p>
+    </div>
+    <div>
+      <b>Help</b><br><br>
+      <a href="#">Shipping</a><br>
+      <a href="#">Returns</a><br>
+      <a href="#">Contact</a>
+    </div>
+    <div>
+      <b>Company</b><br><br>
+      <a href="#">About</a><br>
+      <a href="#">Careers</a><br>
+      <a href="#">Privacy</a>
+    </div>
+  </div>
+  <div class="copyright">© 2025 BookBay. All rights reserved.</div>
+</footer>
+
+<script>
+document.querySelectorAll('.subtle-tabs').forEach(g=>{
+  g.addEventListener('click',e=>{
+    const a=e.target.closest('a');
+    if(!a) return;
+    g.querySelectorAll('a').forEach(x=>x.classList.remove('active'));
+    a.classList.add('active');
+    e.preventDefault();
+  });
+});
+</script>
+</body>
+  </html>
+  
